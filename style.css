@@ -116,6 +116,11 @@
     z-index:50;
     object-fit:cover;   
    }
+
+   .logo {
+      height: 60px;
+   }
+   
  
 
 
