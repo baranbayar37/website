@@ -120,10 +120,129 @@
    .logo {
       height: 60px;
    }
+
+   *{
+      margin: 0;
+      padding: 0;
+   }
    
-
-
-
+   body{
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      background-image: url('6.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+   }
+   
+   ul{
+      display: flex; list-style: none; text-align: center;
+   }
+   
+   ul li{
+      position: relative;
+      display: block;
+      color: #222;
+      font-size: 35px;
+      height: 90px;
+      width: 90px;
+      background: #c2c2c2;
+      line-height: 90px;
+      border-radius: 50%;
+      margin: 18px;
+      cursor: pointer;
+      transition: 0.7s;
+   }
+   
+   ul li::before{
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+      transform: scale(0.8);
+      z-index: -1;
+      transition: 0.7s;
+   }
+   
+   ul li:nth-child(1)::before{
+      background: blue;
+   }
+   
+   ul li:nth-child(2)::before{
+      background: #1dace1;
+   }
+   
+   ul li:nth-child(3)::before{
+      background: #ed09cb;
+   }
+   
+   ul li:nth-child(4)::before{
+      background: #01b80d;
+   }
+   
+   ul li:nth-child(5)::before{
+      background: red;
+   }
+   
+   ul li:hover::before{
+      filter: blur(3px);
+      transform: scale(1.2);
+   }
+   
+   ul li:nth-child(1):hover::before{
+      box-shadow: 0 0 35px blue;
+   }
+   
+   ul li:nth-child(2):hover::before{
+      box-shadow: 0 0 35px #1dace1;
+   }
+   
+   ul li:nth-child(3):hover::before{
+      box-shadow: 0 0 35px #ed09cb;
+   }
+   
+   ul li:nth-child(4):hover::before{
+      box-shadow: 0 0 35px #01b80d;
+   }
+   
+   ul li:nth-child(5):hover::before{
+      box-shadow: 0 0 35px red;
+   }
+   
+   ul li:nth-child(1):hover{
+      color: blue;
+      box-shadow: 0 0 40px blue;
+      text-shadow: 0 0 40px blue;
+   }
+   
+   ul li:nth-child(2):hover{
+      color: #1dace1;
+      box-shadow: 0 0 40px #1dace1;
+      text-shadow: 0 0 40px #1dace1;
+   }
+   
+   ul li:nth-child(3):hover{
+      color: #ed09cb;
+      box-shadow: 0 0 40px #ed09cb;
+      text-shadow: 0 0 40px #ed09cb;
+   }
+   
+   ul li:nth-child(4):hover{
+      color: #01b80d;
+      box-shadow: 0 0 40px #01b80d;
+      text-shadow: 0 0 40px #01b80d;
+   }
+   
+   ul li:nth-child(5):hover{
+      color: red;
+      box-shadow: 0 0 40px red;
+      text-shadow: 0 0 40px red;
+   }
+   
 
 
 
